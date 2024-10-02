@@ -47,14 +47,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
                     end
                 end
 
-for i,v in pairs(game.Workspace:GetChildren()) do
-                    if v.Name == "SiphonOrb" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.SiphonOrb.CFrame
-wait(0.05)
-game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
-                    end
-                end
-
 	 end
 })
 
@@ -66,12 +58,12 @@ game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServ
 })
 
 Scripts:AddButton({
-	Name = "Collect Honor Orb",
+	Name = "Collect Honor Orb (teleports you into orb)",
 	Callback = function()
 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 1)
 wait(0.05)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.SiphonOrb.CFrame
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.HonorOrb.CFrame
 	 end
 })
 
@@ -82,7 +74,7 @@ local Anti = Window:MakeTab({
 })
 
 Anti:AddToggle({
-	Name = "Anti Megarock/CUSTOM & Noclip Megarock/CUSTOM",
+	Name = "Anti MEGAROCK/CUSTOM & Noclip MEGAROCK/CUSTOM",
 	Default = false,
 	Callback = function(Value)
 		_G.AntiRock = Value
