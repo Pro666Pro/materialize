@@ -51,6 +51,13 @@ game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
 })
 
 Scripts:AddButton({
+	Name = "Activate rock mode",
+	Callback = function()
+game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServer()
+	 end
+})
+
+Scripts:AddButton({
 	Name = "De-activate rock mode",
 	Callback = function()
 game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServer()
