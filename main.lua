@@ -58,7 +58,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServ
 })
 
 Scripts:AddButton({
-	Name = "Collect Honor Orb (teleports you into orb)",
+	Name = "Collect Honor Orb (teleports you into orb, not recommended)",
 	Callback = function()
 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 1)
