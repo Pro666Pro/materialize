@@ -64,16 +64,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServ
 	 end
 })
 
-Scripts:AddButton({
-	Name = "Collect Honor Orb",
-	Callback = function()
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
-firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 1)
-wait(0.05)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.HonorOrb.CFrame
-	 end
-})
-
 local Anti = Window:MakeTab({
 	Name = "Anti",
 	Icon = "rbxassetid://4483345998",
