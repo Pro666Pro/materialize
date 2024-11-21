@@ -1,3 +1,5 @@
+-- this script is pretty trash, go ahead and skid it
+
 local GameName = "materialize script - by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
